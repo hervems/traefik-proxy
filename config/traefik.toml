@@ -1,0 +1,4 @@
+logLevel = "DEBUG"
+
+[file]
+filename = "/etc/traefik/rules.toml"
