@@ -46,10 +46,10 @@ destroy: stop
 console:               #~ Open the console in traefik docker
 	$(EXEC) sh
 
-traefik-logs:          #~ Show all logs [CTRL]+[C] to exit
+logs:                  #~ Show all logs [CTRL]+[C] to exit
 	docker-compose logs -f traefik
 
-traefik-error-logs:    #~ Show error logs only [CTRL]+[C] to exit
+error-logs:            #~ Show error logs only [CTRL]+[C] to exit
 	docker logs -f $(DID) >/dev/null
 
-.PHONY: console traefik-logs traefik-error-logs
+.PHONY: console logs error-logs
