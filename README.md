@@ -5,8 +5,8 @@ local dockers.
 
 ## Requirements
 
-* [docker](https://docs.docker.com/install/) version 18.09.1 or more
-* [docker-compose](https://docs.docker.com/compose/install/) version 1.23.2 or more
+* [docker](https://docs.docker.com/install/) version 18.02.0 or more
+* [docker-compose](https://docs.docker.com/compose/install/) version 1.20.0 or more
 
 ## Use Makefile
 
@@ -22,7 +22,7 @@ local dockers.
 ## Example of Traefik labels in a docker-compose.yml
 
 ```yaml
-version: '3.7'
+version: '3.5'
 
 services:
     db:
