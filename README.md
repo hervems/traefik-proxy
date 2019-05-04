@@ -55,3 +55,7 @@ networks:
         name: traefik_gateway
 
 ```
+
+## Frontend Traefik
+
+You can access to the web frontend traefik via: [http://127.0.0.1:8080](http://127.0.0.1:8080)
