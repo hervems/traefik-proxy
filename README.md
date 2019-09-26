@@ -32,19 +32,18 @@ services:
     node:
         image: ...
         labels:
+            - "traefik.enable=true"
             - "traefik.docker.network=traefik_gateway"
-            - "traefik.frontend.rule=Host:my.localhost"
-            - "traefik.backend=node"
+            - "traefik.http.routers.service_node.rule=Host(`my.localhost`")
         networks:
             - gateway
             - internal
     nginx:
         image: ...
         labels:
+            - "traefik.enable=true"
             - "traefik.docker.network=traefik_gateway"
-            - "traefik.1.frontend.rule=Host:admin.localhost; PathPrefix: /api"
-            - "traefik.2.frontend.rule=Host:myapi.localhost"
-            - "traefik.backend=nginx"
+            - "traefik.http.routers.service_nginx.rule=Host(`api.localhost`")
         networks:
             - gateway
             - internal
