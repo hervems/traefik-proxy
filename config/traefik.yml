@@ -1,0 +1,11 @@
+## traefik.yml
+
+# Docker configuration backend
+providers:
+  docker:
+    exposedByDefault: false
+    useBindPortIP: true
+
+# API and dashboard configuration
+api:
+  insecure: true
