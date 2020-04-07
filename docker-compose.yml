@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
   traefik:
-    image: traefik:2.0 # The official Traefik docker image
+    image: traefik # The official Traefik docker image
     ports:
       - "80:80"     # The HTTP port
       - "8080:8080" # The Web UI (enabled by --api)
